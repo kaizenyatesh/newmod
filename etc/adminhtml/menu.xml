@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <menu>
+        <add id="Yat_CustomMenu::custom_menu" title="Custom Menu" module="Yat_CustomMenu"
+        sort_order="80" resource="Yat_CustomMenu::custom_menu"/>
+        <add id="Yat_CustomMenu::menu1" title="Menu1" module="Yat_CustomMenu"
+        sort_order="10" parent="Yat_CustomMenu::custom_menu" action="catalog/product/" 
+        resource="Yat_CustomMenu::menu1"/>
+        <add id="Yat_CustomMenu::menu2" title="Menu2" module="Yat_CustomMenu"
+        sort_order="30" parent="Yat_CustomMenu::custom_menu" action="catalog/product/" 
+        resource="Yat_CustomMenu::menu2"/>
+        <add id="Yat_CustomMenu::menu3" title="Menu3" module="Yat_CustomMenu"
+        sort_order="50" parent="Yat_CustomMenu::custom_menu" action="catalog/product/" 
+        resource="Yat_CustomMenu::menu3"/>
+    </menu>
+</config>
